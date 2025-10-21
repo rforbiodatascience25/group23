@@ -14,6 +14,16 @@ One section for each member of the group
 
 ## Francesc
 
+Hi
+
+```{r}
+3*3
+```
+
+```{r}
+2+2
+```
+
 ## Louis
 
 ## Maxence
