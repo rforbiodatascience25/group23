@@ -87,4 +87,12 @@ sum <- 2+2
 
 ```
 
-## 
+## New feature (from Max)
+
+We're gonna import some libraries
+
+```{r}
+
+library(tidyverse)
+library(ggrepel)
+```
