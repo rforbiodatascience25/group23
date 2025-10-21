@@ -1,0 +1,30 @@
+---
+title: "Micro_report"
+format: html
+editor: visual
+---
+
+## Importing libraries
+
+```{r}
+library(tidyverse)
+library(broom)  
+library(cowplot)
+```
+
+## Importing data
+
+```{r}
+
+biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
+```
+
+## Three things we have to do 
+
+In general, when performing PCA, we’ll want to do (at least) three things:
+
+1.  Look at the data in PC coordinates.
+
+2.  Look at the rotation matrix.
+
+3.  Look at the variance explained by each PC.
