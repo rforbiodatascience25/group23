@@ -14,6 +14,12 @@ One section for each member of the group
 print("hello world")
 ```
 
+### New Analysis
+
+```{r}
+print("Whatup Wold")
+```
+
 ## Cora
 
 First we created a long data frame from the data, by specifying a 'gene' column. This results in a data frame with 3 column: early_metastasis, gene, log2_expr_level.
@@ -42,6 +48,7 @@ Hi
 ## Louis
 
 Some plot about meta data on covid
+
 ```{r}
 library(tidyverse)
 
@@ -69,7 +76,6 @@ meta_data |>
        y = "n")
 
 ```
-
 
 ## Maxence
 
