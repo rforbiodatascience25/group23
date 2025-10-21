@@ -25,7 +25,34 @@ In general, when performing PCA, we’ll want to do (at least) three things:
 
 ## Look at the data in PC coordinates.
 
+```{r}
+pca_fit <- biopsy %>% 
+  select(where(is.numeric)) %>% # retain only numeric columns
+  prcomp(scale = TRUE) # do PCA on scaled data
+```
+
 ## Look at the rotation matrix.
+
+```{r}
+arrow_style <- arrow(
+  angle = 20, ends = "first", type = "closed", length = grid::unit(8, "pt")
+)
+
+# plot rotation matrix
+pca_fit %>%
+  tidy(matrix = "rotation") %>%
+  pivot_wider(names_from = "PC", names_prefix = "PC", values_from = "value") %>%
+  ggplot(aes(PC1, PC2)) +
+  geom_point()+
+  geom_segment(xend = 0, yend = 0, arrow = arrow_style) +
+  geom_text(
+    aes(label = column),
+    hjust = 1, nudge_x = -0.04
+  ) +
+  xlim(-1.25, .5) + ylim(-.5, 1) 
+```
+
+This plot shows the loadings of the features for PC1 and PC2. The longer the arrow is, the stronger the feature determined the direction of the PC(if the loadings would be squared it would represent the contribution to the variance of this PC). PC2 apperantley represent the changes correlated to mitosis of the breast cancer biopsies. \[Abdi and Willimas, 2010\]
 
 ```         
 ## Look at the variance explained by each PC. (Francesc)
