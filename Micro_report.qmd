@@ -25,8 +25,8 @@ In general, when performing PCA, we’ll want to do (at least) three things:
 
 ## Look at the data in PC coordinates.
 
-Look at the rotation matrix.
+## Look at the rotation matrix.
 
-1.  
-
-    ## Look at the variance explained by each PC. (Francesc)
+```         
+## Look at the variance explained by each PC. (Francesc)
+```
