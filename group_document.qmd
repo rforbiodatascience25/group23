@@ -70,6 +70,11 @@ meta_data |>
 
 ```
 
+## New feature
+
+```{r}
+print(2+2)
+```
 
 ## Maxence
 
