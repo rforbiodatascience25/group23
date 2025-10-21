@@ -3,3 +3,6 @@ title: "s250823"
 format: html
 ---
 
+```{r}
+
+```
