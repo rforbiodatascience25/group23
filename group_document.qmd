@@ -76,6 +76,12 @@ meta_data |>
        y = "n")
 
 ```
+## New feature
+
+```{r}
+print(2+2+2)
+```
+
 
 ## Maxence
 
