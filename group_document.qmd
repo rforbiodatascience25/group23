@@ -12,6 +12,17 @@ One section for each member of the group
 
 ## Cora
 
+First we created a long data frame from the data, by specifying a 'gene' column. This results in a data frame with 3 column: early_metastasis, gene, log2_expr_level.
+
+```{r}
+gravier_clean_aug_long <- gravier_clean_aug |> 
+  pivot_longer(
+    cols = -c(early_metastasis),
+    names_to = 'gene',
+    values_to = 'log2_expr_level'
+  )
+```
+
 ## Francesc
 
 ## Louis
