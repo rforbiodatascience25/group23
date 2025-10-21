@@ -25,6 +25,16 @@ gravier_clean_aug_long <- gravier_clean_aug |>
 
 ## Francesc
 
+Hi
+
+```{r}
+3*3
+```
+
+```{r}
+2+2
+```
+
 ## Louis
 
 Some plot about meta data on covid
@@ -58,5 +68,13 @@ meta_data |>
 
 
 ## Maxence
+
+This is a test
+
+```{r}
+
+sum <- 2+2
+
+```
 
 ## 
