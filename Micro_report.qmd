@@ -19,7 +19,7 @@ library(cowplot)
 biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 ```
 
-## Three things we have to do 
+## Three things we have to do
 
 In general, when performing PCA, we’ll want to do (at least) three things:
 
