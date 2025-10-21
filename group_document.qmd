@@ -1,0 +1,21 @@
+---
+title: "Group document"
+format: html
+editor: visual
+---
+
+## Quarto
+
+One section for each member of the group
+
+## Romane
+
+## Cora
+
+## Francesc
+
+## Louis
+
+## Maxence
+
+## 
