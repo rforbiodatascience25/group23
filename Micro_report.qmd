@@ -54,6 +54,22 @@ pca_fit %>%
 
 This plot shows the loadings of the features for PC1 and PC2. The longer the arrow is, the stronger the feature determined the direction of the PC(if the loadings would be squared it would represent the contribution to the variance of this PC). PC2 apperantley represent the changes correlated to mitosis of the breast cancer biopsies. \[Abdi and Willimas, 2010\]
 
-```         
-## Look at the variance explained by each PC. (Francesc)
+## Look at the variance explained by each PC
+
+```{r}
+pca_fit |> 
+  tidy(matrix = "eigenvalues")
+```
+
+```{r}
+ggplot(data = (pca_fit |> 
+         tidy(matrix = "eigenvalues")),
+       mapping = aes(x = PC,
+                     y = percent)) +
+  geom_col(fill = "skyblue",
+           alpha = 0.8) +
+  scale_x_continuous(breaks = 1:9) +
+  scale_y_continuous(labels = scales::percent_format(),
+                     expand = expansion(mult = c(0, 0.1))) +
+  theme_minimal_hgrid(12)
 ```
