@@ -23,6 +23,12 @@ gravier_clean_aug_long <- gravier_clean_aug |>
   )
 ```
 
+## New Features
+
+```{r}
+print('Hello, its me!')
+```
+
 ## Francesc
 
 ## Louis
