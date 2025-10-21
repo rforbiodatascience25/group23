@@ -27,6 +27,12 @@ gravier_clean_aug_long <- gravier_clean_aug |>
   )
 ```
 
+## New Features
+
+```{r}
+print('Hello, its me!')
+```
+
 ## Francesc
 
 Hi
@@ -42,6 +48,7 @@ Hi
 ## Louis
 
 Some plot about meta data on covid
+
 ```{r}
 library(tidyverse)
 
@@ -69,12 +76,12 @@ meta_data |>
        y = "n")
 
 ```
-
 ## New feature
 
 ```{r}
 print(2+2+2)
 ```
+
 
 ## Maxence
 
@@ -86,4 +93,12 @@ sum <- 2+2
 
 ```
 
-## 
+## New feature (from Max)
+
+We're gonna import some libraries
+
+```{r}
+
+library(tidyverse)
+library(ggrepel)
+```
