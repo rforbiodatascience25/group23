@@ -42,6 +42,7 @@ Hi
 ## Louis
 
 Some plot about meta data on covid
+
 ```{r}
 library(tidyverse)
 
@@ -70,7 +71,6 @@ meta_data |>
 
 ```
 
-
 ## Maxence
 
 This is a test
@@ -81,4 +81,12 @@ sum <- 2+2
 
 ```
 
-## 
+## New feature (from Max)
+
+We're gonna import some libraries
+
+```{r}
+
+library(tidyverse)
+library(ggrepel)
+```
