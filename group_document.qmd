@@ -18,4 +18,12 @@ One section for each member of the group
 
 ## Maxence
 
+This is a test
+
+```{r}
+
+sum <- 2+2
+
+```
+
 ## 
