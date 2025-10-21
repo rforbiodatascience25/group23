@@ -45,6 +45,18 @@ Hi
 2+2
 ```
 
+### New Feature
+
+TEST TEST
+
+```{r}
+print("Hello!")
+```
+
+```{r}
+2/2
+```
+
 ## Louis
 
 Some plot about meta data on covid
@@ -81,7 +93,6 @@ meta_data |>
 ```{r}
 print(2+2+2)
 ```
-
 
 ## Maxence
 
