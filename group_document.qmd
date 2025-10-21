@@ -39,9 +39,22 @@ Hi
 2+2
 ```
 
+### New Feature
+
+TEST TEST
+
+```{r}
+print("Hello!")
+```
+
+```{r}
+2/2
+```
+
 ## Louis
 
 Some plot about meta data on covid
+
 ```{r}
 library(tidyverse)
 
@@ -69,7 +82,6 @@ meta_data |>
        y = "n")
 
 ```
-
 
 ## Maxence
 
