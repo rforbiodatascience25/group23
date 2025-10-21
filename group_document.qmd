@@ -27,6 +27,36 @@ gravier_clean_aug_long <- gravier_clean_aug |>
 
 ## Louis
 
+Some plot about meta data on covid
+```{r}
+library(tidyverse)
+
+meta_data <- read_csv("data/subject-metadata.csv",
+                      na = c("","N/A","NA"))
+
+meta_data |> 
+  drop_na(Cohort, Gender) |> 
+  count(Cohort, Gender) |> 
+  ggplot(aes(x = Cohort,
+             y = n,
+             fill = Gender)) +
+  geom_col(position = position_dodge(preserve = "single"),
+           alpha = 0.5,
+           color = "black",
+           linewidth = 0.5) +  # side by side
+  theme_minimal() +
+  theme(legend.position = "bottom",
+        axis.text.x = element_text(
+          angle = 30,
+          hjust = 1
+        )) +
+  labs(title = "Type of Covid per gender",
+       x = "Cohort",
+       y = "n")
+
+```
+
+
 ## Maxence
 
 ## 
