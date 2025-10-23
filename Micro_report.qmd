@@ -35,7 +35,7 @@ pca_fit <- biopsy |>
 Storing the data in pca_fit, we need to consider that we are only taking numeric values (where(is.numeric)) and that we are sorting them in a scale to unit variance, before performing PCA
 
 ```{r}
-
+png("abc", type="cairo")
 pca_fit |> 
   augment(biopsy) |>  # add original dataset back in
   ggplot(aes(.fittedPC1, .fittedPC2, color = outcome)) + 
@@ -44,6 +44,7 @@ pca_fit |>
     values = c(malignant = "#D55E00", benign = "#0072B2")
   ) +
   theme_half_open(12) + background_grid()
+
 ```
 
 ## Look at the rotation matrix.
