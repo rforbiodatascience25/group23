@@ -56,10 +56,14 @@ This plot shows the loadings of the features for PC1 and PC2. The longer the arr
 
 ## Look at the variance explained by each PC
 
+To analyze the variance explained by each PC, we use the tidy() function to extract the relevant data:
+
 ```{r}
 pca_fit |> 
   tidy(matrix = "eigenvalues")
 ```
+
+In the context of a plot:
 
 ```{r}
 ggplot(data = (pca_fit |> 
@@ -67,9 +71,11 @@ ggplot(data = (pca_fit |>
        mapping = aes(x = PC,
                      y = percent)) +
   geom_col(fill = "skyblue",
-           alpha = 0.8) +
+           alpha = 0.9) +
   scale_x_continuous(breaks = 1:9) +
   scale_y_continuous(labels = scales::percent_format(),
                      expand = expansion(mult = c(0, 0.1))) +
-  theme_minimal_hgrid(12)
+  theme_minimal()
 ```
+
+As shown in the plot, the first principal component captures 65% of the variation in the data.
